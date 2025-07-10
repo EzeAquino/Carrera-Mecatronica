@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f0f0f0;
+}
+h1 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.materia {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+.materia.locked {
+  opacity: 0.5;
+}
+.materia.tachado {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.materia h3, .materia div {
+  margin: 0;
+}
+h2 {
+  grid-column: 1 / -1;
+  background: #ddd;
+  padding: 8px;
+  border-radius: 8px;
+}
